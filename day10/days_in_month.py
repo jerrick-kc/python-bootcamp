@@ -12,6 +12,14 @@ def is_leap(p_year):
 
 
 def days_in_month(p_year, p_month):
+    """
+    This function takes the input of a certain year and month. Then it will return how many days there are during this
+    month during this year
+
+    :param p_year: Input year
+    :param p_month: Input month
+    :return: Days in the input month during the input year
+    """
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if p_month == 2 and is_leap(p_year):
         return 29
